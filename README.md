@@ -1,1 +1,1 @@
-#Base para projetos usando PHP → MVC
+#Base para projetos utilizando PHP → MVC
