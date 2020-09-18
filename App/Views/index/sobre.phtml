@@ -1,0 +1,11 @@
+<h1>Sobre Nos</h1>
+<hr>
+
+		<div class="row">
+			<? foreach ($this->view->dados as $key => $info) {?>
+			<div class="col-12 text-center" style="margin: 50px 0;">
+				<h1> <?= $info['titulo'] ?></h1>
+				<p> <?= $info['descricao'] ?></p>
+			</div>
+			<? } ?>
+		</div>
