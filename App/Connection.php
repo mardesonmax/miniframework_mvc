@@ -2,6 +2,8 @@
 
 namespace App;
 
+use PDOException;
+
 class Connection {
 	public static function getDb() {
 		try {
@@ -15,8 +17,9 @@ class Connection {
 			return $conn;
 
 
-		} catch (PDOExeption $e) {
-			//tratar o erro 
+		} catch (PDOException $e) {
+			echo $e->getMessage();
+			exit;
 		}
 	}
 }
